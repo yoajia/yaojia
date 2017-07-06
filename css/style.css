@@ -1,0 +1,185 @@
+@charset "utf-8";
+
+/*重置样式*/
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height:100%;
+}
+
+.hide{display: none;}
+
+/*公共部分样式*/
+#wrap{
+	width: 100%;
+	height: 100%;
+	max-width:640px;
+	min-width: 320px;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.main{
+	height: 100%;
+	position: relative;
+}
+.page{	
+	width: 100%;
+	height:100%;
+	margin:0 auto;
+	/*border:1px solid red;*/
+	position:absolute;left:0;top:0;z-index:99;
+	transition:all 1s ease;
+}
+
+.page_1{background: url(../images/3.jpg);}
+.page_2{background: url(../images/3.jpg);}
+.page_3{background: url(../images/3.jpg);}
+.page_4{background: url(../images/3.jpg);}
+.page_5{background: url(../images/3.jpg);}
+
+/*无限循环*/
+.infinite{animation-iteration-count:infinite;}
+/*延迟时间*/
+.delay-time{animation-delay:0.5s;}
+/*page页在屏幕下面*/
+.pageDown{transform:translateY(100%);} 
+/*page页在屏幕上面*/
+.pageUp{transform:translateY(-100%);} 
+
+
+/*音乐按钮样式*/
+.music_btn{
+	width: 44px;
+	height: 44px;
+	background:url(../images/music.png) center center no-repeat;
+	position: fixed;
+	top:15px;
+	right:15px;
+	z-index: 100;
+}
+/*提示箭头样式*/
+.arrow{
+	width: 86px;
+	height:66px;
+	background-color:transparent;
+	position: fixed;
+	bottom:10px;
+	left:46%;
+	z-index:100;
+}
+/*第一页的样式*/
+.page_1 h1{
+	font-size: 6rem;
+	text-align: center;
+	line-height: 8rem;
+	color: white;
+}
+.page_1 p{
+	font-size: 3rem;
+	color: white;
+	margin-top:-7rem;
+	margin-left: 18rem; 
+}
+/*第二页的样式*/
+.page_2 img{
+	display: block;
+	width: 26%;
+	height:20%;
+	border-radius:80%;
+	margin:20px auto;
+}
+.page_2 p{
+	font-size: 20px;
+	font-weight: bold;
+	text-align:center;
+	line-height: 46px;
+}
+.page_2 p:nth-child(2){
+	color:lime;
+}
+.page_2 p:nth-child(3){
+	color:pink;
+}
+.page_2 p:nth-child(4){
+	color:yellow;
+}
+.page_2 p:nth-child(5){
+	color:orange;
+}
+.page_2 p:nth-child(6){
+	color:green;
+}
+.page_2 p:nth-child(7){
+	color:red;
+}
+.page_2 p:nth-child(8){
+	color:blue;
+}
+/*第三页的样式*/
+.page_3 h2{
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	line-height: 8rem;
+}
+.page_3 p{
+	width: 300px;
+	color:white;
+	font-size: 1rem;
+	line-height: 2rem;
+	margin-left: 4rem;
+	
+
+}
+/*第四页的样式*/
+.page_4 h2{
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	line-height: 8rem;
+}
+.page_4 img{
+	width: 200px;
+	height: 290px;
+	margin-left: 6rem;
+	margin-top: -1rem;
+}
+.page_4 p{
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1rem;
+	font-weight: bold;
+}
+.page_4 a{
+	color: white;
+}
+/*第五页的样式*/
+.page_5 h2{
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	line-height: 8rem;
+}
+.page_5 p{
+	text-align: center;
+	font-size: 1rem;
+	color: white;
+	line-height: 2rem;
+}
+.page_5 img{
+	width: 160px;
+	height: 160px;
+	margin-left: 8rem;
+	margin-top: 1rem;
+}
+.page_5 h3{
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+}
+.page_5_p{
+	margin-top: 2rem;
+}
